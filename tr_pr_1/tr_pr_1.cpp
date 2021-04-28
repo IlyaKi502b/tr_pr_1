@@ -85,6 +85,11 @@ public:
         cin >> b;
         cout << " c = ? " << endl;
         cin >> c;
+        if ((a < b + c) || (b < a + c) || (c < b + a))
+        {
+            cout << "Треугольника не существует" << endl << endl;
+            exit(1);
+        }
     }
 
     double polup()
